@@ -1,0 +1,142 @@
+:root {
+  --fondo: #d2cfcf;
+  --retoques: #037bc0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /** 1rem = 10px **/
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: var(--fondo);
+}
+
+/** Globales **/
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1, h2, h3 {
+  margin: 0 0 5rem 0;
+}
+
+/** Utilidades **/
+.text-center {
+  text-align: center;
+}
+
+/** Header y Navegación **/
+.nombre-sitio {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.nombre-sitio span {
+  color: var(--retoques);
+}
+
+.contenedor-navegacion {
+  border-top: 0.1rem solid #a89e87;
+}
+
+.nav-principal {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  background-image: url(../img/principal.jpg);
+  height: 55rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/** Categorías **/
+.categorias {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.categoria a {
+  text-align: center;
+  display: block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.categoria a:hover {
+  background-color: var(--retoques);
+  color: #fff;
+  border-radius: 1rem;
+}
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/** Bloque Nosotros **/
+
+.sobre-nosotros {
+  background-image: linear-gradient( to right, transparent 50%, var(--retoques) 50%, var(--retoques) 100% ), url(../img/nosotros.jpg);
+  background-position: left center;
+  padding: 10rem 0;
+  background-repeat: no-repeat;
+}
+
+.sobre-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 12rem;
+  color: #fff;
+}
+
+/** Listado Productos **/
+.contenido-principal {
+  padding-top: 5rem;
+}
+
+.producto {
+  background-color: var(--retoques);
+}
+
+.texto-producto {
+  text-align: center;
+  color: #fff;
+}
+
+.texto-producto h3 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+.texto-producto p {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.texto-producto .precio {
+  font-size: 3rem;
+  font-weight: 700;
+}
